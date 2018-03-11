@@ -7,7 +7,7 @@ body {font-family: 'Poppins', sans-serif; font-size: 16px;}
 
 .titulo-seccion {text-align: center; margin-bottom: 40px;}
 
-.titulo-seccion h2 { color: #0089E0; font-size: 3.125rem; margin-bottom: 15px; font-weight: 500;}
+.titulo-seccion h2 {color: #d20a2c; font-size: 3.125rem; margin-bottom: 15px; font-weight: 500;}
 
 .titulo-seccion p {color: #979797; font-size: 1rem; font-weight: 400;}
 
@@ -88,7 +88,8 @@ body {font-family: 'Poppins', sans-serif; font-size: 16px;}
 
 .main .proyectos .galeria-proyectos .proyecto {width: 32%; margin-bottom: 2%; cursor: pointer;}
 
-.main .proyectos .galeria-proyectos .proyecto img {width: 100%; vertical-align: top;}
+.main .proyectos .galeria-proyectos .proyecto img {width: 100%; vertical-align: top; transition: 1s;}
+.main .proyectos .galeria-proyectos .proyecto img:hover {transform: rotate(16deg); box-shadow: 9px 8px 26px #000000a8;}
 
 /*Modal fotos proyectos*/
 .modal{
@@ -98,8 +99,8 @@ body {font-family: 'Poppins', sans-serif; font-size: 16px;}
 
 .modal img {width: 90%; max-width: 600px;}
 
-.modal .btn-cerrar {position: fixed; width: 50px; height: 50px; top: 20px; right: 20px; background: #0089E0; text-align: center; 
-  cursor: pointer;
+.modal .btn-cerrar {position: fixed; width: 50px; height: 50px; top: 20px; right: 20px; background: #d20a2c; text-align: center; 
+  cursor: pointer; border-radius: 50%;
 }
 
 .modal .btn-cerrar i {color: #fff; font-size: 1rem; line-height: 50px;}
@@ -136,9 +137,11 @@ body {font-family: 'Poppins', sans-serif; font-size: 16px;}
 
 .main .contenedor-slider .btn-siguiente {right: 2%;}
 
-.main .contenedor-slider .btn-anterior i, .main .contenedor-slider .btn-siguiente i {color: #fff;}
+.main .contenedor-slider .btn-anterior i, .main .contenedor-slider .btn-siguiente i {color: #fff; font-size: 36px;
+    background: #d20a2c; padding: 10px 13px; border-radius: 30px; transition: 0.6s;
+}
 
-.main .contenedor-slider .btn-anterior i:hover, .main .contenedor-slider .btn-siguiente i:hover {color: #0089E0;}
+.main .contenedor-slider .btn-anterior i:hover, .main .contenedor-slider .btn-siguiente i:hover {color: #d20a2c; background: white;}
 
 /*Nuestro equipo*/
 
@@ -147,8 +150,10 @@ body {font-family: 'Poppins', sans-serif; font-size: 16px;}
 .main .nuestro-equipo .equipo {display: flex; flex-direction: row; flex-wrap: wrap; justify-content: space-between;}
 
 .main .nuestro-equipo .equipo .persona-equipo {background: #fff; padding: 50px; width: 100%; max-width: 300px; 
-  box-shadow: 0px 9px 32px -1px rgba(0,0,0,0.2); text-align: center;
+  box-shadow: 0px 9px 32px -1px rgba(0,0,0,0.2); text-align: center; transition: 1.6s;
 }
+
+.main .nuestro-equipo .equipo .persona-equipo:hover {box-shadow: 4px 4px 25px #00000086;}
 
 .main .nuestro-equipo .equipo .persona-equipo:first-child, .main .nuestro-equipo .equipo .persona-equipo:last-child{
   position: relative; top: 20px;
@@ -158,9 +163,9 @@ body {font-family: 'Poppins', sans-serif; font-size: 16px;}
 
 .main .nuestro-equipo .equipo .persona-equipo .foto img {width: 100%; border-radius: 100%;}
 
-.main .nuestro-equipo .equipo .persona-equipo .texto h3 {font-size: 1.3rem; font-weight: 500; color: #0089E0;}
+.main .nuestro-equipo .equipo .persona-equipo .texto h3 {font-size: 1.3rem; font-weight: 500; color: #d20a2c;}
 
-.main .nuestro-equipo .equipo .persona-equipo .texto h4 {color: #979797; font-size: 0.8rem; font-weight: 400; margin-bottom: 15px;}
+.main .nuestro-equipo .equipo .persona-equipo .texto h4 {color: #979797; font-size: 0.8rem; font-weight: 400; margin-bottom: 15px; font-style: italic;}
 
 .main .nuestro-equipo .equipo .persona-equipo .texto p {color: #979797; font-size: 0.9rem; font-weight: 400;}
 
