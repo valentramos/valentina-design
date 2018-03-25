@@ -28,7 +28,7 @@ a {color: #d20a2c;}
   display: flex; flex-direction: row; justify-content: space-between; align-items: center; position: relative; z-index: 100;
 }
 
-.logo {display: inline-block; width: 50px;}
+.logo {display: inline-block; width: 50px; font-family: 'Great Vibes', cursive;}
 
 .logo img {width: 100%; vertical-align: top;}
 
